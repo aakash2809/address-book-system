@@ -51,4 +51,16 @@ public class AddressBookServices {
 
 		System.out.println(person);
 	}
+
+	// DELETE CONTACT DETAIL BY PERSON NAME
+	public void deleteContactDetail(String firstName, String lastName) {
+		if (firstName.equals(person.getFirstName()) && lastName.equals(person.getLastName())) {
+			person = null;
+			System.out.println("Contact deleted successfully\n");
+		} else {
+			System.out.println("name does not exist");
+		}
+		
+		System.out.println(person);
+	}
 }

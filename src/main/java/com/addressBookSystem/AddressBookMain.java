@@ -8,13 +8,19 @@ public class AddressBookMain {
 
 	public static void main(String[] args) {
 		AddressBookServices addressBookServices = new AddressBookServices();
+		String firstName,lastName;
 		System.out.println("            Welcome to Address Book          ");
 		System.out.println("---------------------------------------------");
 		addressBookServices.addContact();
-		
+
 		System.out.print("Enter first name and last name of the person to edit the contact: ");
-		String firstName=scanner.nextLine();
-		String lastName=scanner.nextLine();
-		addressBookServices.editContact(firstName,lastName);
+		 firstName = scanner.nextLine();
+		 lastName = scanner.nextLine();
+		addressBookServices.editContact(firstName, lastName);
+		
+		System.out.print("Enter first and last name of the person to delete the contact: ");
+		 firstName = scanner.nextLine();
+		 lastName = scanner.nextLine();
+		addressBookServices.deleteContactDetail(firstName, lastName);
 	}
 }
