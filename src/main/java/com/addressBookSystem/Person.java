@@ -80,7 +80,7 @@ public class Person {
 	public String toString() {
 		return "\nName : " +firstName + " " + lastName +
                 "\nAddress : " + address +
-                "\nCity : " + city + " , " +"Sate : " + state + " , " +"ZIP : " + zip +
+                "\nCity : " + city + " , " +"State : " + state + " , " +"ZIP : " + zip +
                 "\nPhone Number : " + phoneNumber + " \nEmail : " + email + "\n";
 	}
 }
